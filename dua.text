@@ -1,0 +1,28 @@
+2. (A) 
+error => user tidak ditemukan
+error di file app.js di fungsi getUserData baris ke 15
+error di file app.js di fungsi processUser baris ke 30
+error di file app.js di fungsi main baris ke 50
+
+(B)
+error panjang dari property length isinya null
+error di file data.js di fungsi processData baris ke 8
+error di file server.js di fungsi handleRequest baris ke 20
+error di file app.js di fungsi main baris ke 35
+
+(C) 
+error token ditemukan
+error di file script.js baris ke 5
+
+(D)
+error pada property status tidak terdefinisi/ undefined
+error di file order.js di fungsi updateOrder baris ke 18
+error di file order.js di fungsi processOrder baris le 35
+error di file cart.js di fungsi checkout baris ke 50
+
+(C)
+error tumpukan data melebihi batas maksimal
+error di file app.js di fungsi recursiveFunction baris ke 10
+error di file app.js di fungsi recursiveFunction baris ke 10
+error di file app.js di fungsi recursiveFunction baris ke 10
+
