@@ -8,25 +8,17 @@
 // output berupa rank nilai yang masuk array of objek
 
 // bandingin nilai terbesar di input 1
-// bandingin input 2 dengan nilai input 1
-const denseRanking = (c, d) => {
-    
-
-        for (let i= 0; i <= c.length; i++) {
-            
-        }
-
+// // bandingin input 2 dengan nilai input 1
+const denseRanking = (currentRank, newValues) => {
+  let score = [...new Set(currentRank)].sort((a, b) => b - a);
+  const result = newValues.map((el) => {
+    while (score.length && el >= score[score.length - 1]) {
+      score.pop();
+    }
+    return score.length + 1;
+  });
+  console.log(result);
 };
 
 denseRanking([100, 100, 50, 40, 40, 20, 10], [5, 25, 50, 120]);
-
-// function rankings(array) {
-//     return array
-//       .map((v, i) => [v, i])
-//       .sort((a, b) => b[0] - a[0])
-// //       .map((a, i) => [...a, i + 1])
-// //       .sort((a, b) => a[1] - b[1])
-// //       .map(a => a[2]);
-// }
-
-// console.log(rankings([10, 5, 20]));
+// denseRanking([100, 90, 90, 80, 75, 60], [50, 66, 77, 90, 102]);
